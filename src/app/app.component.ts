@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticationService } from './service/authentication/authentication.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reacting-form';
+  check: boolean = true
+  constructor(public authenticationService: AuthenticationService) {
+
+  }
+  logout() {
+    this.authenticationService.logout()
+  }
 }
