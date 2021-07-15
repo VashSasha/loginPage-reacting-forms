@@ -13,6 +13,7 @@
         <label for="exampleInputPassword1" class="form-label">Password</label>
         <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" required
           ngModel>
+        <div id="passwordHelp" class="form-text">try "test" </div>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
       <div class="alert alert-danger" role="alert" *ngIf="isFormInvalid">
